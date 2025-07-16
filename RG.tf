@@ -20,6 +20,7 @@ provider "azurerm" {
   features {}
   subscription_id = "ff5b2fc2-2ebb-4a22-9e25-a8941510f4c7"
 }
+# 2 RG hain
 resource "azurerm_resource_group" "RainySeason" {
   name     = "Baarish_Season"
   location = "central india"
