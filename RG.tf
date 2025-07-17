@@ -15,7 +15,7 @@ terraform {
 #     subscription_id      = "ff5b2fc2-2ebb-4a22-9e25-a8941510f4c7"
 #   }
 # }
-
+# new changes done
 provider "azurerm" {
   features {}
   subscription_id = "ff5b2fc2-2ebb-4a22-9e25-a8941510f4c7"
