@@ -8,17 +8,17 @@ terraform {
 }
 # terraform {
 #   backend "azurerm" {
-#     resource_group_name  = "Pta_Nahin"
-#     storage_account_name = "ptanahinstorage"
-#     container_name       = "ptahainstate"
+#     resource_group_name  = "Agrawest"
+#     storage_account_name = "aug15ind"
+#     container_name       = "backend"
 #     key                  = "terraform.tfstate"
-#     subscription_id      = "ff5b2fc2-2ebb-4a22-9e25-a8941510f4c7"
+#     subscription_id      = "5e4fafbb-ef69-4e17-8835-68030d81f758"
 #   }
 # }
 # new changes done
 provider "azurerm" {
   features {}
-  subscription_id = "ff5b2fc2-2ebb-4a22-9e25-a8941510f4c7"
+  subscription_id = "5e4fafbb-ef69-4e17-8835-68030d81f758"
 }
 # 2 RG hain
 resource "azurerm_resource_group" "RainySeason" {
@@ -29,3 +29,4 @@ resource "azurerm_resource_group" "FloodySeason" {
   name     = "Flood_Season"
   location = "Western India"
 }
+
