@@ -27,6 +27,7 @@ resource "azurerm_resource_group" "RainySeason" {
 }
 resource "azurerm_resource_group" "FloodySeason" {
   name     = "Flood_Season"
-  location = "Western India"
+  location = "West India"
 }
+
 
