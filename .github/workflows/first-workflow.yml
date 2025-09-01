@@ -3,7 +3,7 @@ on: workflow_dispatch
 # For manually triggers the pipelineby default branch
 jobs: 
   Terraformjobs:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v5.0.0
