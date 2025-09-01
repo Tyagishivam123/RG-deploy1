@@ -1,10 +1,8 @@
 name: Github actions first workflow 
-on:
-  push:
-    branches: [ "main" ]
+on: workflow_dispatch
 jobs: 
   Terraformjobs:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Checkout
       uses: actions/checkout@v5.0.0
