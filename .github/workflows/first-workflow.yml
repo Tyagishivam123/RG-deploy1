@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     jobs: 
       Terraformjobs:
-        runs-on: self-hosted
+        runs-on: subuntu-latest
         steps:
         - name: Checkout
           uses: actions/checkout@v5.0.0
