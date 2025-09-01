@@ -1,6 +1,7 @@
 name: Github actions first workflow 
-on: workflow_dispatch 
-# For manually triggers the pipelineby default branch
+on:
+  push:
+    branches: [ "main" ]
 jobs: 
   Terraformjobs:
     runs-on: ubuntu-latest
