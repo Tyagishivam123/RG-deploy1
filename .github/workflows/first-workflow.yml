@@ -1,5 +1,6 @@
 name: Github actions first workflow 
-  on: workflow_dispatch
+on: 
+  workflow_dispatch:
     jobs: 
       Terraformjobs:
         runs-on: self-hosted
