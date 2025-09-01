@@ -1,8 +1,8 @@
 name: 'Github actions workflow'
 on: workflow_dispatch
-permission:
-id-token: write
-contents: read
+permissions:
+  id-token: write
+  contents: read
 jobs: 
   Terraformjobs:
     runs-on: ubuntu-latest
