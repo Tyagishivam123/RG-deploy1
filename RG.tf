@@ -6,15 +6,15 @@ terraform {
     }
   }
 }
-#terraform {
- #backend "azurerm" {
- #  resource_group_name  = "Agrawest"
-  #  storage_account_name = "sept15"
-   #container_name       = "statefile"
-    #key                  = "git.tfstate"
-   #subscription_id      = "5e4fafbb-ef69-4e17-8835-68030d81f758"
-   #}
- #}
+terraform {
+ backend "azurerm" {
+   resource_group_name  = "Agrawest"
+    storage_account_name = "sept15"
+   container_name       = "statefile"
+    key                  = "git.tfstate"
+   subscription_id      = "5e4fafbb-ef69-4e17-8835-68030d81f758"
+   }
+ }
 resource "azurerm_storage_container" "stg" {
   name                  = "statefile"
  storage_account_id    = azurerm_storage_account.sept.id
@@ -49,6 +49,7 @@ account_tier             = "Standard"
     environment = "staging"
   }
 }
+
 
 
 
