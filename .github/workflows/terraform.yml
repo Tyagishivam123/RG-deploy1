@@ -16,9 +16,9 @@ jobs:
   - name: Azure Login
     uses: Azure/login@v2.3.0
     with:
-    client-id: d280ce02-d0b3-4d9c-b0c2-1e2de8987bf1
-    tenant-id: c1458e86-22a3-4b4c-b4af-89ecd5384a8f
-    subscription-id: 5e4fafbb-ef69-4e17-8835-68030d81f758
+     client-id: d280ce02-d0b3-4d9c-b0c2-1e2de8987bf1
+     tenant-id: c1458e86-22a3-4b4c-b4af-89ecd5384a8f
+     subscription-id: 5e4fafbb-ef69-4e17-8835-68030d81f758
   - name: Terraform fmt
     id: fmt
     run: terraform fmt   
@@ -29,7 +29,7 @@ jobs:
     id: validate
     run: terraform validate 
 
-    - name: Terraform Plan
-      id: plan
-      run: terraform plan -no-color -input=false
-      continue-on-error: true
+  - name: Terraform Plan
+    id: plan
+    run: terraform plan -no-color -input=false
+    continue-on-error: true
