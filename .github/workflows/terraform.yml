@@ -32,3 +32,7 @@ jobs:
     - name: Terraform Validate
       id: validate
       run: terraform validate
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan -no-color -input=false
+      continue-on-error: true
