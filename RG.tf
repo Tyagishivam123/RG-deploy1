@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-# terraform {
+ # terraform {
  # backend "azurerm" {
   #  resource_group_name  = "Agrawest"
   #  storage_account_name = "aug15"
@@ -49,6 +49,7 @@ resource "azurerm_storage_account" "aug" {
     environment = "staging"
   }
 }
+
 
 
 
