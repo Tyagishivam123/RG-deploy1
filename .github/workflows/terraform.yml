@@ -3,8 +3,8 @@ on:
  push:
   branches: ["main"]
 permissions:
- id-token: write
- contents: read
+  id-token: write
+  contents: read
 jobs: 
  Terraformjobs:
   runs-on: self-hosted
@@ -28,7 +28,6 @@ jobs:
   - name: Terraform Validate
     id: validate
     run: terraform validate 
-
   - name: Terraform Plan
     id: plan
     run: terraform plan -no-color -input=false
