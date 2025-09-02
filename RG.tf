@@ -26,10 +26,10 @@ provider "azurerm" {
   subscription_id = "5e4fafbb-ef69-4e17-8835-68030d81f758"
 }
 # 3 RG hain
-resource "azurerm_resource_group" "Agra" {
- name     = "Agrawest"
-  location = "West india"
-}
+#resource "azurerm_resource_group" "Agra" {
+ #name     = "Agrawest"
+  #location = "West india"
+#}
 #resource "azurerm_resource_group" "RainySeason" {
  # name     = "Baarish_Season"
   #location = "central india"
@@ -49,6 +49,7 @@ account_tier             = "Standard"
     environment = "staging"
   }
 }
+
 
 
 
